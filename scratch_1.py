@@ -38,8 +38,8 @@ moment(2, [0,1,1,1,1])
 def helbergcodebook(n, s, a):
     file = codebook(n)
     w = weight(n, s)
-    num = w[n]    #This is printing out as 33, when it should be 20.
-    print num       #w[n] prints out 20
+    num = w[n]    
+    print num       
     for t in file:
         m = moment(s, t) #This is not working because the moment program only works if the number is a list of ints while the codebook program gives strings
         print m
